@@ -1,0 +1,37 @@
+<div class="container-fluid mt-3">
+  <div class="row text-center">
+    <h2 class="breed-name pb-3">{{ selectedBreed }}</h2>
+  </div>
+  <div class="row justify-content-center mb-3">
+    <div class="col-md-6 col-sm-12">
+      <div class="card">
+        <img src="{{ breedImageUrl }}" class="card-img-top breed-img" alt="Breed Image" />
+        <div class="row m-3">
+          <div class="card-text col-2">
+            <button
+              type="button"
+              class="btn btn-danger btn-sm"
+              (click)="navigateHome()"
+            >
+              Back
+            </button>
+          </div>
+          <div class="card-text col-8 text-center">
+            Here is a wonderful picture of the
+            <strong class="breed-name">{{ selectedBreed }}</strong
+            >, what a great dog!
+          </div>
+          <div class="card-text col-2">
+            <button
+              type="button"
+              class="btn btn-success btn-sm"
+              (click)="newImage()"
+            >
+              New Picture!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

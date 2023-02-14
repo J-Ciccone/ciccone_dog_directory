@@ -1,0 +1,18 @@
+.breed-list-item{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.breed-list-item:hover{
+    background-color: black;
+    color: white;
+    transition: background-color 0.75s ease;
+    cursor: pointer;
+}
+
+.breed-list-container{
+    box-shadow: 0px 1px 3px 0px #676767;
+    border-radius: 5px;
+}
+
