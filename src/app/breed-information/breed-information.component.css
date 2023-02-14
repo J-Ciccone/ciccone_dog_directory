@@ -1,3 +1,14 @@
-.card-text{
-    font-family: 'Poppins', sans-serif;
+.card-text {
+  font-family: "Poppins", sans-serif;
+}
+
+button.full-width {
+  width: 20%;
+  margin-block: 2px;
+}
+
+@media (max-width: 900px) {
+  button.full-width {
+    width: 50%;
+  }
 }
