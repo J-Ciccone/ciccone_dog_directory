@@ -41,7 +41,7 @@ export class BreedInformationComponent implements OnInit {
   }
 
   /**
-   * Trigger a new call to the breed image api to generate a new image for the user to viewbre
+   * Trigger a new call to the breed image api to generate a new image for the user to view
    */
   newImage() {
     this.breedDataService

@@ -1,11 +1,6 @@
-.breed-list-item{
-    display: flex;
-    justify-content: center;
-    border-radius: 5px;
-}
 
 .breed-list-item:hover{
-    background-color: black;
+    background-color: #212529;
     color: white;
     transition: background-color 0.75s ease;
     cursor: pointer;

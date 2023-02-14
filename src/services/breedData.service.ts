@@ -17,7 +17,7 @@ export class BreedDataService {
 
   /**
    * Retreives a list of all dog breeds from the API.
-   * @returns An Observable that emits an array of strings containing all dog breeds.
+   * @returns An Observable that contains a string array for all dog breeds.
    * */
   getAllBreeds(): Observable<string[]> {
     const breedListUrl = `${this.baseUrl}/breeds/list`;
@@ -28,7 +28,8 @@ export class BreedDataService {
 
   /**
    * Retreives an image string for the given breed.
-   * @returns An Observable that emits a string for this breeds image.
+   * @param breedName
+   * @returns An Observable that contains a string for this breeds image.
    * */
   getRandomImageByBreed(breedName: string): Observable<string> {
     const specificBreedUrl = `${this.baseUrl}/breed/${breedName}/images/random`;
